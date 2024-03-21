@@ -1,7 +1,78 @@
+
 <!DOCTYPE html>
 <html>
+
+<head>
+    <title>Hello world!</title>
+    <style>
+        body {
+            font-family: 'Consolas', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #0c0c0c;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        .container {
+            position: relative;
+            padding: 10px;
+            width: 290px;
+        }
+
+        .text-container {
+            display: inline-block;
+            white-space: pre;
+            color: rgb(56 189 65);
+        }
+
+        .cursor::after {
+            content: "|";
+            display: inline-block;
+            animation: blink-caret 0.8s infinite;
+        }
+
+        @keyframes blink-caret {
+
+            from,
+            to {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="container">
+        <div class="text-container" id="text-container">
+            <h1><span id="typed-text"></span><span class="cursor"></span></h1>
+        </div>
+    </div>
+
+    <script>
+        const text = "der-pw.github.io";
+        const typedTextElement = document.getElementById("typed-text");
+        let currentIndex = 0;
+
+        function typeText() {
+            if (currentIndex < text.length) {
+                typedTextElement.textContent += text[currentIndex];
+                currentIndex++;
+                setTimeout(typeText, (Math.floor(Math.random() * 150) + 50));
+            }
+        }
+
+        typeText();
+    </script>
 </body>
+
 </html>
