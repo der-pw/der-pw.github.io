@@ -1,0 +1,60 @@
+.form-box {
+    padding-top: 3px;
+  }
+  
+  .vitepress-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid;
+    border-color: var(--vp-c-border);
+    padding: 17px 12px;
+    border-radius: 5px;
+  }
+  
+  .vitepress-input-group {
+    position: relative;
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+  
+  .vitepress-input {
+    padding: 10px;
+    border: 1px solid;
+    border-color: var(--vp-text-color);
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .vitepress-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    color: var(--vp-text-color);
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+  }
+  
+  .vitepress-input:focus + .vitepress-label,
+  .vitepress-input:not(:placeholder-shown) + .vitepress-label {
+    top: -20px;
+    font-size: 12px;
+    color: var(--vp-primary-color);
+  }
+  
+  .vitepress-button {
+    padding: 10px;
+    background-color: var(--vp-button-brand-bg);
+    color: var(--vp-button-brand-text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .vitepress-button:hover {
+    background-color: var(--vp-button-brand-active-bg);
+    color: var(--vp-button-brand-hover-text);
+  }
