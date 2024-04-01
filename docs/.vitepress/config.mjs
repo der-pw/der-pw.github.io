@@ -7,6 +7,8 @@ export default defineConfig({
   base: '/',
   lastUpdated: true,
   themeConfig: {
+    externalLinkIcon: true,
+    sidebarMenuLabel: 'TEst',
     editLink: {
       pattern: 'https://github.com/der-pw/der-pw.github.io/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
@@ -17,7 +19,8 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: '3D Druck', link: '/3d-print/' },
-      { text: 'Arduino', link: '/arduino/' }
+      { text: 'Arduino', link: '/arduino/' },
+      { text: 'Impressum', link: 'impressum' }
     ],
     sidebar: [
       {
@@ -66,12 +69,12 @@ export default defineConfig({
         link: 'https://www.printables.com/@derpw',
         ariaLabel: 'me on printables'
       }
-    ]
+    ],
   },
   locales: {
     root: {
       label: 'German',
       lang: 'de-DE'
     }
-  }
+  },
   })
