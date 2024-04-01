@@ -27,7 +27,7 @@ Es kann folgendes Modell verwendet werden:
 
 ## Slicer Einstellungen
 Slice das Modell mit Standardeinstellungen 2 Perimter und 0 Inflill ist okay.  
-Stelle sicher dass dein Slicer auf Firmware Retratiob eingestellt ist.  
+Stelle sicher dass dein Slicer auf Firmware Retraction eingestellt ist.  
 Hier am Beispiel von Orca Slicer:
 ![Orcar FW Retraction](../../assets/images/orca-fw-retract.png)  
 Im gcode-File solltest du nun, an den Stellen, an denen Retraction ausgeführt wird, `G10` und `G11` Angaben finden.
