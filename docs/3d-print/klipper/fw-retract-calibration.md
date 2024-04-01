@@ -27,12 +27,12 @@ Es kann folgendes Modell verwendet werden:
 
 ## Slicer Einstellungen
 Slice das Modell mit Standardeinstellungen 2 Perimter und 0 Inflill ist okay.  
-Stelle sicher dass dein Slicer auf Firmware Retratiob eingestellt ist.  
+Stelle sicher dass dein Slicer auf Firmware Retraction eingestellt ist.  
 Hier am Beispiel von Orca Slicer:
 ![Orcar FW Retraction](../../assets/images/orca-fw-retract.png)  
 Im gcode-File solltest du nun, an den Stellen, an denen Retraction ausgeführt wird, `G10` und `G11` Angaben finden.
 
-Bervor das Modell gedruckt wird, gib folgeendes in die Kommandozeil unter Fluidd/Mainsail ein.  
+Bevor das Modell gedruckt wird, gib folgendes in die Kommandozeile unter Fluidd/Mainsail ein.  
 `TUNING_TOWER COMMAND=SET_RETRACTION PARAMETER=RETRACT_LENGTH START=0 FACTOR=0.05`  
 `START` entspricht dem Startwert, mit wieviel Retraction gestartet werden soll.  
 `FACTOR` entspricht dem Steigerungswert.  
