@@ -57,7 +57,6 @@ export default defineConfig({
         items: [
           { text: 'Passwort Generator', link: '/misc/passwd-gen' },
           { text: 'Color Picker', link: '/misc/colorpicker' }
-          
         ]
       }
     ],
