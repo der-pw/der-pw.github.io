@@ -6,4 +6,6 @@ next:
 
 # 3D Druck
 
-![Benchy](../assets/images/3ddruck.webp)
+![Benchy](../assets/images/3ddruck.webp)  
+
+Bild generiert mit: [Microsoft Copilot Designer](https://www.bing.com/images/create)
