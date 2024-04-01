@@ -45,6 +45,17 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Homelab',
+        items: [
+          {
+            text: 'Docker',
+            items: [
+              { text: 'Installation', link: '/docker/installation' }
+            ]
+          }
+        ]
+      },
+      {
         text: 'Arduino',
         items: [
           {
@@ -62,7 +73,8 @@ export default defineConfig({
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/der-pw' },
-      { icon: {
+      {
+        icon: {
           svg: '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10v6h2v5h-2.5L13 17h-2l-3.5-4H5V8h2zm3 20H2v-2h8a1 1 0 0 0 1-1v-1h2v1a3 3 0 0 1-3 3"/></svg>'
         },
         link: 'https://www.printables.com/@derpw',
@@ -76,4 +88,4 @@ export default defineConfig({
       lang: 'de-DE'
     }
   },
-  })
+})
