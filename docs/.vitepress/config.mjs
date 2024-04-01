@@ -7,6 +7,9 @@ export default defineConfig({
   base: '/',
   lastUpdated: true,
   themeConfig: {
+    editLink: {
+      pattern: 'https://github.com/der-pw/der-pw.github.io/edit/main/docs/:path'
+    }
     search: {
       provider: 'local'
     },
