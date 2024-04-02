@@ -1,7 +1,6 @@
 ---
 title: Docs with VitePress
 editLink: true
-sidebarDepth: 2
 ---
 
 # ATtiny

@@ -8,7 +8,10 @@ export default defineConfig({
   lastUpdated: true,
   themeConfig: {
     externalLinkIcon: true,
-    sidebarMenuLabel: 'TEst',
+    outline: {
+      level: [2, 3],
+      label: 'Auf dieser Seite'
+    },
     editLink: {
       pattern: 'https://github.com/der-pw/der-pw.github.io/edit/main/docs/:path',
       text: 'Edit this page on GitHub'

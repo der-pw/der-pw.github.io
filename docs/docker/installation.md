@@ -15,8 +15,6 @@ sudo nano docker-compose.yml
 docker compose pull
 docker compose up -d
 ```  
-  
-
 Inhalt der `docker-compose.yml`
 ```yml
 version: '3'
