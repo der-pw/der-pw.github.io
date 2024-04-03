@@ -21,7 +21,7 @@ hero:
       text: Arduino
       link: /arduino/
   image:
-    src: /assets/images/itsme.webp
+    src: /itsme.webp
     alt: its me
 ---
 
