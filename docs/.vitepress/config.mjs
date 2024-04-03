@@ -1,8 +1,9 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   title: "der-pw.github.io",
-  description: "Just for fun.",
+  description: "Nerdkram und so Sachen halt!",
   lang: "de-DE",
   base: '/',
   lastUpdated: true,
@@ -22,58 +23,67 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: '3D Druck', link: '/3d-print/' },
+      { text: 'Homelab', link: '/homelab/' },
       { text: 'Arduino', link: '/arduino/' },
-      { text: 'Impressum', link: 'impressum' }
+      { text: 'Misc', link: '/misc/' },
+      { text: 'Impressum', link: '/impressum' }
     ],
-    sidebar: [
-      {
-        text: '3D Druck',
-        items: [
-          {
-            text: 'Klipper', link: '/3d-print/klipper/pa-calibration',
-            // Hier wird ein weiterer Unterpunkt hinzugefügt
-            items: [
-              { text: 'Pressure Advanced', link: '/3d-print/klipper/pa-calibration' },
-              { text: 'Rotation Distance', link: '/3d-print/klipper/rotation-distance-calibration' },
-              { text: 'Firmware Retraction', link: '/3d-print/klipper/fw-retract-calibration' }
-            ]
-          },
-          {
-            text: 'Slicer', link: '/3d-print/slicer/flow-calibration',
-            // Hier wird ein weiterer Unterpunkt hinzugefügt
-            items: [
-              { text: 'Orca Slicer Flow kalibrieren', link: '/3d-print/slicer/flow-calibration' }
-            ]
-          }
-        ]
-      },
-      {
-        text: 'Homelab',
-        items: [
-          {
-            text: 'Docker',
-            items: [
-              { text: 'Installation', link: '/docker/installation' }
-            ]
-          }
-        ]
-      },
-      {
-        text: 'Arduino',
-        items: [
-          {
-            text: 'ATtiny Sleep', link: '/arduino/attiny-sleep'
-          }
-        ]
-      },
-      {
-        text: 'Misc.',
-        items: [
-          { text: 'Passwort Generator', link: '/misc/passwd-gen' },
-          { text: 'Color Picker', link: '/misc/colorpicker' }
-        ]
-      }
-    ],
+    sidebar: {
+
+      '/arduino/': [
+        {
+          text: 'Arduino',
+          items: [
+            {
+              text: 'ATtiny Sleep', link: '/arduino/attiny-sleep'
+            }
+          ]
+        }
+      ],
+
+      '/3d-print/': [
+        {
+          text: '3D Druck',
+          items: [
+            {
+              text: 'Klipper', link: '/3d-print/klipper/pa-calibration',
+              // Hier wird ein weiterer Unterpunkt hinzugefügt
+              items: [
+                { text: 'Pressure Advanced', link: '/3d-print/klipper/pa-calibration' },
+                { text: 'Rotation Distance', link: '/3d-print/klipper/rotation-distance-calibration' },
+                { text: 'Firmware Retraction', link: '/3d-print/klipper/fw-retract-calibration' }
+              ]
+            },
+            {
+              text: 'Slicer', link: '/3d-print/slicer/flow-calibration',
+              // Hier wird ein weiterer Unterpunkt hinzugefügt
+              items: [
+                { text: 'Orca Slicer Flow kalibrieren', link: '/3d-print/slicer/flow-calibration' }
+              ]
+            }
+          ]
+        }
+      ],
+
+      '/homelab/': [
+        {
+          text: 'Docker',
+          items: [
+            { text: 'Docker Compose', link: '/homelab/docker/docker-compose' }
+          ]
+        }
+      ],
+
+      '/misc/': [
+        {
+          text: 'Misc.',
+          items: [
+            { text: 'Passwort Generator', link: '/misc/passwd-gen' },
+            { text: 'Color Picker', link: '/misc/colorpicker' }
+          ]
+        }
+      ]
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/der-pw' },
       {

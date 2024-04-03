@@ -1,7 +1,7 @@
 ---
 next: 
     text: 'ATtiny Sleep'
-    link: 'arduino/attiny-sleep'
+    link: '/arduino/attiny-sleep'
 ---
 
 # Arduino

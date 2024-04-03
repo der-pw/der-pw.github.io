@@ -46,6 +46,7 @@
     margin-right: 10px;
     width: 70px;
     height: 70px;
+    cursor: pointer;
   }
   
   .color-values {

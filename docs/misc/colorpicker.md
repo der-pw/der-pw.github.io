@@ -2,6 +2,7 @@
 import ColorPicker from '../components/ColorPicker.vue'
 </script>
 
-## Color Picker
+# Color Picker
+Weil man es hin und wieder mal braucht.
 
 <ColorPicker />
