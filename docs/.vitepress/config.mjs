@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  head: [['link', { rel: 'icon', href: '/public/favicon.ico' }]],
   title: "der-pw.github.io",
   description: "Nerdkram und so Sachen halt!",
   lang: "de-DE",
