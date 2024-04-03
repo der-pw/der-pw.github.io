@@ -3,8 +3,8 @@ Macros sind essentiell in Klipper.
 
 ## GCode-Dateien älter als x Tage löschen
 Hierfür benötigt man `gcode_shell_command`, welches in den Paketen von [kiauh](https://github.com/dw-0/kiauh) enthalten ist.  
-`-mtime +50` gibt an, dass alle Dateien, älter als 50 Tage, gelöscht werden sollen.
-Über `DELETE_JOBS` in der Konsole lassen sie die Dateien dann löschen. Eventuell muss der Pfad ` /home/pi/printer_data/gcodes/` noch angepasst werden, meist jedoch passt das so.
+`-mtime +50` gibt an, dass alle Dateien, älter als 50 Tage, gelöscht werden sollen.  
+Über `DELETE_JOBS` in der Konsole lassen sie die Dateien dann löschen. Eventuell muss der Pfad ` /home/pi/printer_data/gcodes/` noch angepasst werden, i.d.R. passt das so.
 
 ```toml
 ### delete all jobs older than n days
@@ -21,8 +21,8 @@ gcode:
 ```
 
 ## Loops in Macros
-Möchte man einen Befehl oder eine Befehlskette mahrfach ausführen, kann man diese in einen Loop verpacken.
-Hierbei wird sich am Jinja Template System orientier. Das machen wir uns zu Nutze und bauen eine for-Schleife.
+Möchte man einen Befehl oder eine Befehlskette mehrfach ausführen, kann man diese in einen Loop verpacken.
+Hierbei wird sich am Jinja Template System orientiert. Das machen wir uns zu Nutze und bauen eine for-Schleife.
 
 `<count>` ist die Anzahl der Loops.
 ```
