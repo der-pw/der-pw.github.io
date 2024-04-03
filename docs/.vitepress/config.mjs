@@ -51,7 +51,8 @@ export default defineConfig({
               items: [
                 { text: 'Pressure Advanced', link: '/3d-print/klipper/pa-calibration' },
                 { text: 'Rotation Distance', link: '/3d-print/klipper/rotation-distance-calibration' },
-                { text: 'Firmware Retraction', link: '/3d-print/klipper/fw-retract-calibration' }
+                { text: 'Firmware Retraction', link: '/3d-print/klipper/fw-retract-calibration' },
+                { text: 'Macro-Sammlung', link: '/3d-print/klipper/macro-sammlung' }
               ]
             },
             {
