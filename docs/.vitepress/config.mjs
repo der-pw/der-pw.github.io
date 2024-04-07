@@ -68,6 +68,12 @@ export default defineConfig({
 
       '/homelab/': [
         {
+          text: 'Linux',
+          items: [
+            { text: 'Tipps und Tricks', link: '/homelab/linux/tipps-und-tricks' }
+          ]
+        },
+        {
           text: 'Docker',
           items: [
             { text: 'Docker Compose', link: '/homelab/docker/docker-compose' }
