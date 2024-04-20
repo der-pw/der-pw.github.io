@@ -29,7 +29,7 @@ Es kann folgendes Modell verwendet werden:
 Slice das Modell mit Standardeinstellungen 2 Perimter und 0 Inflill ist okay.  
 Stelle sicher dass dein Slicer auf Firmware Retraction eingestellt ist.  
 Hier am Beispiel von Orca Slicer:
-![Orcar FW Retraction](../../assets/images/orca-fw-retract.png)  
+![Orcar FW Retraction](../../assets/images/orca-fw-retract.png){data-zoomable}  
 Im gcode-File solltest du nun, an den Stellen, an denen Retraction ausgeführt wird, `G10` und `G11` Angaben finden.
 
 Bevor das Modell gedruckt wird, gib folgendes in die Kommandozeile unter Fluidd/Mainsail ein.  

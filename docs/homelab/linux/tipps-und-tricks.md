@@ -33,5 +33,5 @@ sudo apt udpade
 sudo apt install ncdu
 ```
 Danach führst du einfach `ncdu /` in der Kommandozeile aus.
-![ncdu screenshot](../../assets/images/ncdu_screenshot.png)
+![ncdu screenshot](../../assets/images/ncdu_screenshot.png){data-zoomable} 
 Mit den Pfeiltasten und Enter wird durch das Menü navigiert.  
