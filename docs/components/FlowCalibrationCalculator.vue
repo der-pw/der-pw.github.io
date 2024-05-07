@@ -7,7 +7,7 @@
       </div>
       <div class="vitepress-input-group">
         <input type="text" id="sample_val" v-model="sampleVal" class="vitepress-input" required>
-        <label for="sample_val" class="vitepress-label">Abgelesener Wert des Sampels:</label>
+        <label for="sample_val" class="vitepress-label">Abgelesener Wert des Samples:</label>
       </div>
       <button type="submit" class="vitepress-button">Berechnen</button>
     </form>
