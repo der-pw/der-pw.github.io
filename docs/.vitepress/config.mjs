@@ -78,6 +78,12 @@ export default defineConfig({
           items: [
             { text: 'Docker Compose', link: '/homelab/docker/docker-compose' }
           ]
+        },
+        {
+          text: 'MacOS',
+          items: [
+            { text: 'Tipps und Tricks - Shell', link: '/homelab/macos/tipps-und-tricks-shell' }
+          ]
         }
       ],
 
