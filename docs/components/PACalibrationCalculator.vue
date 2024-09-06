@@ -27,7 +27,7 @@
   
   // Standardwerte für Startwert und Faktor als Zeichenketten
   const startVal = ref('0')
-  const factor = ref('0.005')
+  const factor = ref('0.002')
   const meassHeight = ref(null)
   const retraction = ref(null)
   
