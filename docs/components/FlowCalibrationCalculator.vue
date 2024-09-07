@@ -21,7 +21,7 @@
 <script setup>
 import { ref } from 'vue'
 
-const actFlow = ref(null)
+const actFlow = ref('1')
 const sampleVal = ref(null)
 const result = ref(null)
 
