@@ -1,49 +1,84 @@
 {
+<<<<<<< HEAD
   "hash": "0a4aca2c",
   "configHash": "63787173",
   "lockfileHash": "6988acb8",
   "browserHash": "6d36199c",
+=======
+  "hash": "b8448aec",
+  "configHash": "9ae80179",
+  "lockfileHash": "d24c5de3",
+  "browserHash": "758e631a",
+>>>>>>> ecabdbd (uodate)
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
+<<<<<<< HEAD
       "fileHash": "d38b800a",
+=======
+      "fileHash": "d7abf59a",
+>>>>>>> ecabdbd (uodate)
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
+<<<<<<< HEAD
       "fileHash": "8c98f360",
+=======
+      "fileHash": "a85ce67f",
+>>>>>>> ecabdbd (uodate)
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
+<<<<<<< HEAD
       "fileHash": "7ebd8bbb",
+=======
+      "fileHash": "81df08e3",
+>>>>>>> ecabdbd (uodate)
       "needsInterop": false
     },
     "vitepress > @vueuse/integrations/useFocusTrap": {
       "src": "../../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
+<<<<<<< HEAD
       "fileHash": "05d02354",
+=======
+      "fileHash": "a7beafa4",
+>>>>>>> ecabdbd (uodate)
       "needsInterop": false
     },
     "vitepress > mark.js/src/vanilla.js": {
       "src": "../../../../node_modules/mark.js/src/vanilla.js",
       "file": "vitepress___mark__js_src_vanilla__js.js",
+<<<<<<< HEAD
       "fileHash": "ed53e2dd",
+=======
+      "fileHash": "bf587ebe",
+>>>>>>> ecabdbd (uodate)
       "needsInterop": false
     },
     "vitepress > minisearch": {
       "src": "../../../../node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
+<<<<<<< HEAD
       "fileHash": "b37183c9",
+=======
+      "fileHash": "db228c19",
+>>>>>>> ecabdbd (uodate)
       "needsInterop": false
     },
     "medium-zoom": {
       "src": "../../../../node_modules/medium-zoom/dist/medium-zoom.esm.js",
       "file": "medium-zoom.js",
+<<<<<<< HEAD
       "fileHash": "fd51e4f7",
+=======
+      "fileHash": "1c1f84b2",
+>>>>>>> ecabdbd (uodate)
       "needsInterop": false
     }
   },
