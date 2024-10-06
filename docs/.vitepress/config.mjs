@@ -61,6 +61,13 @@ export default defineConfig({
               items: [
                 { text: 'Orca Slicer Flow kalibrieren', link: '/3d-print/slicer/flow-calibration' }
               ]
+            },
+            {
+              text: 'Hostsystem', link: '/3d-print/hostsystem/udev-actions',
+              // Hier wird ein weiterer Unterpunkt hinzugefügt
+              items: [
+                { text: 'USB-ADXL udev Aktion', link: '/3d-print/hostsystem/udev-actions' }
+              ]
             }
           ]
         }
