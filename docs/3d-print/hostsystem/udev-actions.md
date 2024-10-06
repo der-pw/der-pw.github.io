@@ -1,5 +1,5 @@
 ::: warning
-Noch nicht fertig, ich muss ich nochmal ran!
+Noch nicht fertig, hier muss ich nochmal ran!
 :::
 
 # USB-ADXL udev Aktion
