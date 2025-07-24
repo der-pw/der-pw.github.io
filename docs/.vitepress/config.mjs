@@ -56,6 +56,13 @@ export default defineConfig({
               ]
             },
             {
+              text: 'Klipper-Firmware', link: '/3d-print/klipper-firmware/can-geraete-flashen',
+              // Hier wird ein weiterer Unterpunkt hinzugefügt
+              items: [
+                { text: 'CAN Geräte flashen', link: '/3d-print/klipper-firmware/can-geraete-flashen' }
+              ]
+            },
+            {
               text: 'Slicer', link: '/3d-print/slicer/flow-calibration',
               // Hier wird ein weiterer Unterpunkt hinzugefügt
               items: [
@@ -77,7 +84,8 @@ export default defineConfig({
         {
           text: 'Linux',
           items: [
-            { text: 'Tipps und Tricks', link: '/homelab/linux/tipps-und-tricks' }
+            { text: 'Tipps und Tricks', link: '/homelab/linux/tipps-und-tricks' },
+            { text: 'Disk erweitern', link: '/homelab/linux/resize-disk' }
           ]
         },
         {
