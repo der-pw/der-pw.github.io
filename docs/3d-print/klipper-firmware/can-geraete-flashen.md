@@ -1,12 +1,13 @@
 # CAN Geräte flashen
 
-## flashen mittels Katapult
+## Flashen mittels Katapult
 *In diesem Beispiel laufen die Geräte schon mit CAN und Katapult ist als Bootloader installiert.*
 
 - Wenn nicht schon geschehen: https://github.com/Arksine/katapult Katapult installieren.
 - Direkt nach dem Systemstart  den Klipper-Dienst stoppen.
   Hierzu sollten die MCUs vorher nicht mit Klipper verbunden sein. Idealerweise den Drucker vorher kurz vom Netz getrennt haben, und danach hochfahren.
 - Mit `sudo systemctl stop klipper.service` Klipperdienst stoppen, damit dieser die Geräte nicht einhängen/verwenden kann.
+- Prüfen, dass das CAN-Interface aktiv ist, zum Beispiel `can0`.
 - CAN-Bus query machen um die IDs zu ermitteln `~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0`
 - es sollte folgendes erscheinen:
 ```
@@ -21,5 +22,26 @@ Total 2 uuids found
   Das Offset setzt die Firmware später im ROM an die richtigen Bereiche. Katapult ist so klein, dass immer das kleinst verfügbare Offset genommen werden kann.
 - Ist das erledigt, mit `Q` beenden und die Config speichern.
   Danach ein `make` und somit die Firmware backen.
-- Die Firmware kann dann mit `~/klippy-env/bin/python3 ~/katapult/scripts/flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u <uid>`
-  Die`<uid>` ist die ID des Gerätes, das geflashed werden soll.
+- Die Firmware kann dann mit `python3 ~/katapult/scripts/flashtool.py -i can0 -f ~/klipper/out/klipper.bin -u <uid>` geflasht werden.
+  Die `<uid>` ist die ID des Gerätes, das geflasht werden soll.
+
+::: warning
+`canbus_query.py` sollte nicht dauerhaft zum Testen oder "Pingen" verwendet werden. Das Tool ist nur sinnvoll, um neue oder noch nicht konfigurierte Nodes zu finden.
+:::
+
+## UUID direkt ueber Katapult abfragen
+
+Wenn genau ein Katapult-Node am Bus haengt, kann die UUID auch direkt so abgefragt werden:
+
+```sh
+python3 ~/katapult/scripts/flashtool.py -i can0 -q
+```
+
+## Bereits laufendes Geraet erst in den Bootloader bringen
+
+Wenn auf dem Geraet schon Klipper laeuft und es nicht automatisch im Bootloader startet, kann zunaechst der Bootloader angefordert werden:
+
+```sh
+python3 ~/katapult/scripts/flashtool.py -i can0 -u <uid> -r
+python3 ~/katapult/scripts/flashtool.py -i can0 -f ~/klipper/out/klipper.bin -u <uid>
+```
