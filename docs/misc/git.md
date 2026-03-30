@@ -10,6 +10,20 @@ git commit --amend -m "Neue Commit-Message"
 git push --force-with-lease
 ```
 
+## Historie komplett durch neuen Root-Commit ersetzen
+
+Wenn nicht nur die letzten Commits zusammengefasst werden sollen, sondern die aktuelle Arbeitskopie als komplett neue Historie veroeffentlicht werden soll, ist ein neuer Root-Commit meist der sauberste Weg:
+
+```sh
+git checkout --orphan clean-main
+git add -A
+git commit -m "Initial import"
+git branch -M clean-main main
+git push --force-with-lease origin main
+```
+
+Damit wird der aktuelle Stand als neuer Startpunkt von `main` veroeffentlicht, ohne die alte Commit-Historie mitzunehmen.
+
 ## Auf einen bestimmten Commit zuruecksetzen
 
 Wenn du lokal auf einen bestimmten Commit zurueck willst:
