@@ -24,6 +24,16 @@ git push --force-with-lease origin main
 
 Damit wird der aktuelle Stand als neuer Startpunkt von `main` veroeffentlicht, ohne die alte Commit-Historie mitzunehmen.
 
+Wichtig: Bestehende Klone oder Deployments, die noch auf einem alten Commit der vorherigen Historie stehen, koennen danach meist nicht mehr einfach per `git pull` aktualisiert werden. In solchen Faellen den Stand neu holen und den Branch hart auf `origin/main` setzen oder das Repo frisch klonen:
+
+```sh
+git fetch origin
+git checkout main
+git reset --hard origin/main
+```
+
+Wenn auf dem Server lokale Aenderungen liegen, muessen diese vorher gesichert werden, weil `git reset --hard` sie verwirft.
+
 ## Auf einen bestimmten Commit zuruecksetzen
 
 Wenn du lokal auf einen bestimmten Commit zurueck willst:
